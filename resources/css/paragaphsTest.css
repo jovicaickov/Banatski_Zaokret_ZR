@@ -1,0 +1,45 @@
+.btn-toggle-paragraph {
+    padding: 10px 0;
+    display: block;
+    background-color: #B01D23;
+    border: 1px solid #B01D23;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.btn-toggle-paragraph:hover {
+    color: #fff;
+    background-color: #E9242D;
+}
+.btn-toggle-paragraph-eng {
+    padding: 10px 0;
+    display: block;
+    background-color: #B01D23;
+    border: 1px solid #B01D23;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.btn-toggle-paragraph-eng:hover {
+    color: #fff;
+    background-color: #E9242D;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

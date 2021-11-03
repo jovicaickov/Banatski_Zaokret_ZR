@@ -1,0 +1,842 @@
+/*  Orange color: #B01D23   #E9242D   #F5E9C5*/
+
+/* ------------------------------------------------------------------------------- */
+/* BASIC SETUP */
+/* ------------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #5f5f5f;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.flex-div { /*Center lower columns on page o_nama.html*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section {
+    padding: 100px 0 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ----- HEADINGS ----- */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: 110px; /* was 0, set to 110px*/
+    margin-bottom: 30px;
+    color: rgb(80, 80, 80);
+    font-size: 270%;
+    word-spacing: 6px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.org-heading { /*Add a top margin to an inserted heading*/
+    margin-top: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #E9242D;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* set column titles to fixed height to align the top edge of every paragraph in the separate columns*/
+.col-title-short {
+    height: 50px;
+}
+.col-title-long {
+    height: 80px;
+}
+/****/
+
+
+/* ----- PARAGRAPHS ----- */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-indent: 75px; /*added on 17.9.*/
+}
+.list-indent {
+    padding: 0 90px;
+}
+.list-indent li {
+    margin-bottom: 20px;
+}
+.center-paragraph { /*centers a paragraph*/
+    text-align: center;
+    text-indent: 0px; /*cancel text indent from long-copy*/
+}
+
+.justify-paragraph { /*added on 8.9.2021.*/
+    text-align: justify;
+}
+.justify-paragraph > li {
+    text-indent: 0; /*cancel text indent from long-copy*/
+}
+
+.box p {
+    font-size: 90%; /*was 90%, set to 50%*/
+    line-height: 145%;
+    margin-bottom: 30px; /*added margin on paragraphs*/
+}
+.box .smaller-email-font {
+    font-size: 89%;
+}
+
+
+/* ----- ICONS ----- */
+
+/* Style applied to font awsome icons*/
+.icon-big {
+    font-size: 400%;
+    display: block;
+    color: #E9242D;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #E9242D;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ----- LINKS ----- */
+
+a:-webkit-any-link,
+a:visited {
+    color: #E9242D;
+    text-decoration: none;
+    padding: 1px;
+    border-bottom: 1px solid #E9242D;
+    -webkit-transition: border-bottom 0.3s, color 0.3s;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+a:-moz-any-link,
+a:visited {
+    color: #E9242D;
+    text-decoration: none;
+    padding: 1px;
+    border-bottom: 1px solid #E9242D;
+    -webkit-transition: border-bottom 0.3s, color 0.3s;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+a:any-link,
+a:visited {
+    color: #E9242D;
+    text-decoration: none;
+    padding: 1px;
+    border-bottom: 1px solid #E9242D;
+    -webkit-transition: border-bottom 0.3s, color 0.3s;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+#logo-link {
+    border: 0;
+    padding: 0;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ----- BUTTONS ----- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #B01D23;
+    border: 1px solid #B01D23;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link, 
+.btn-ghost:visited {
+    border: 1px solid #B01D23;
+    color: #B01D23;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #E9242D;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #E9242D;
+}
+
+.btn-ghost:hover, 
+.btn-ghost:active {
+    border: 1px solid #E9242D;
+    color: #fff;
+}
+
+.btn-boards {
+    padding: 10px 0 !important;
+    display: inline-block;
+    width: 100%;
+    background-color: #B01D23;
+    border: 1px solid #B01D23;
+    border-radius: 3px;
+    color: #fff !important;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.btn-boards:hover {
+    color: #fff;
+    background-color: #E9242D;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* HEADER */
+/* ------------------------------------------------------------------------------- */
+
+.main-header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/hero-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    background-attachment: fixed;
+    border-bottom: 1px solid #B01D23;
+}
+
+/* Link that covers the main header */
+.main-header .main-header-page-link { /* link is 83% of header's height and is placed on the bottom of the main header*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.main-header .main-header-page-link:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 580px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: default;
+}
+
+/* Logo under the hero text box */
+.hero-text-box .hero-img {
+    margin: 0 auto;
+    width: 270px;
+    height: 250px;
+    background-image: url(../img/logo-white.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-red {
+    display: none;
+    height: 55px; /*was 50px, set to 55px*/
+    width: auto;
+    float: left;
+    margin: 18px 0; /*was 5px, set to 15px later*/
+}
+
+/* Main navi */
+
+nav {
+    display: hidden;
+    background-color: #fff;
+    border-bottom: 1px solid #B01D23;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 35px; /*was 45px, set to 35px*/
+    z-index: 10;
+}
+
+.main-nav li {
+    position: relative; /*Set position to relative so it's child can be set to position absolute*/
+    display: inline-block;
+    height: 60px;
+    margin: 0 15px;
+    width: 130px; /* set the width of each link so all of them can fit in a single row*/
+}
+.main-nav li a {
+    text-align: center;
+    width: 100%; /*width is 100% of the parent element so the text can be properly centred*/
+    position: absolute; /*Set position to absolute*/
+    height: 100%;
+    /*Put the element in the top left corner of the parent*/
+    top: 0%;
+    left: 0%;
+}
+.main-nav li .single-line-btn {
+    line-height: 45px;    /*verticaly center text of buttons with short text*/
+    height: 85%; /*reduce the height of buttons with shorter text to reduce the space from the text to the border*/ 
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 7px 0;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%; /*was 90%, */
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #B01D23; 
+}
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* Sticky navi */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #B01D23;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 15px; /*was 18px*/
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 7px 0;
+    color: #fff;
+    font-weight: 300;    
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    border-bottom: 2px solid #fff;
+}
+
+.sticky .logo {
+    display: none;
+}
+.sticky .logo-red {
+    display: block;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* FEATURES */
+/* ------------------------------------------------------------------------------- */
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* CITIES */
+/* ------------------------------------------------------------------------------- */
+.section-cities {
+    background-color: #f4f4f4;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* TOPICS COLUMNS IMAGES */
+/* ------------------------------------------------------------------------------- */
+.box .col-img {
+    border-width: 0;
+    width: 100%; /*added on 6.9.2021*/
+    height: 180px; /*added on 6.9.2021*/
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* FORM */
+/* ------------------------------------------------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=age], /*added later*/
+input[type=adress], /*added later*/
+input[type=residence], /*added later*/
+select, 
+textarea {
+    resize: vertical;
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline: none}
+
+/* ------------------------------------------------------------------------------- */
+/* FOOTER */
+/* ------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+
+.footer-nav {
+    list-style: none;
+    float: left;
+
+}
+.social-links-div { /*set div's width so the unordered list can be centered using margin: 0 auto*/
+    width: 100%;
+}
+.social-links {
+    list-style: none;
+    text-align: center;
+    margin: 0 auto; /*Centers the list horizontaly*/
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #B01D23;
+}
+
+.social-links a:link,
+.social-links a:visited {
+    font-size: 160%;
+}
+
+.facebook,
+.twitter,
+.linkedin, /*changed from google to linkedin*/
+.youtube,
+.instagram {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.linkedin:hover { /*changed from google to linkedin*/
+    color: #34a853;
+}
+
+.youtube:hover {
+    color: #ff0000;
+}
+
+.instagram:hover {
+    color: #c32aa3;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* ANIMATIONS */
+/* ------------------------------------------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animate__fadeIn,
+.js--wp-2.animate__fadeInUp,
+.js--wp-3.animate__fadeIn {
+    opacity: 1;
+} 
+
+.js--wp-4.animate__headShake, 
+.js--wp-5.animate__jackInTheBox {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Clanovi odbora */
+/* ------------------------------------------------------------------------------- */
+.cards-section {
+    padding-bottom: 0;
+    padding-top: 70px;
+    text-align: center;
+}
+.card-title {
+    font-size: 200%;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.card-title-big {
+    margin-top: 70px;
+    font-size: 200%;
+    font-weight: 500;
+}
+.card-title-big::after {
+    display: none;
+}
+.card-title-small {
+    margin-top: 50px;
+    font-size: 120%;
+}
+.card-title-small::after {
+    margin-top: 20px;
+}
+.card-article:nth-child(3) {
+    padding-top: 70px;
+}
+.card-article:nth-child(3)::after {
+    display: none;
+}
+.card-article::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 3px;
+    background-color: #E9242D;
+    margin-top: 30px;
+}
+.board-column-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.board-function {
+    font-weight: 600 !important;
+}
+
+.person-card-column  {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.person-card-column .person-card-image{
+    width: 55%;
+    height: 170px;
+    border-radius: 100%;
+    border-color: #fff;
+    margin: 0 auto;
+}
+
+.person-card-column .board-person-card-image{
+    width: 60%;
+    height: 200px;
+    border-color: #fff;
+    margin: 0 auto;
+}
+
+.person-card-column .person-card-list {
+    list-style: none;
+    padding-top: 15px;
+    line-height: 1.6;
+}
+
+.person-card-list  .person-card-list-item {
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+/*
+Old code, could be used
+Swap Lang Button 
+.btn-swap-lang {
+    margin: 0 auto;
+    display: block; 
+    width: 50% !important;
+    height: 50px !important;
+}
+.btn-swap-lang .lang-swap-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.btn-swap-lang {
+    position: fixed;
+    top: 0;
+    right: 1%;
+    display: block;
+    padding: 10px 5px 2px !important;
+    border: 1px solid gray !important;
+    background-color: white;
+    border-top: none !important;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    box-shadow: 0px 0px 5px black;
+    transition: .4s ease-in-out !important;
+    z-index: 10000;
+}
+.btn-swap-lang:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+.btn-swap-lang .lang-swap-img {
+    width: 50px;
+    height: 30;
+}
+.h-language {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 80%;
+    color: black;
+    transition: .4s ease-in-out;
+}
+.btn-swap-lang:hover .h-language {
+    color: white;
+}
+
+/*Dokumenta*/
+.documents-section {
+    background-color: #efefef;
+    padding: 3rem 0;
+    text-align: center;
+}
+.documents-section h3 {
+    margin-top: 2rem;
+}
+.documents-section a{
+    font-size: 500%;
+    border-bottom: none;
+    margin-bottom: 1rem;
+}
+
+.document-row {
+    padding: 3rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.document-holder {
+    width: 48%;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex: row;
+    margin: 1rem 0rem;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+    border-top: #B01D23 5px solid;
+    color: #555;
+}
+.document-holder h5 {
+    font-size: 90%;
+    font-weight: 400;
+    line-height: 2;
+}
+.document-holder .document-dl-link {
+    display: block;
+    background-color: #B01D23;
+    color: white;
+    padding: .5rem 1rem;
+    transition:  .4s ease-in-out;
+    font-size: 90%;
+}
+.document-holder .document-dl-link:hover,
+.document-holder .document-dl-link:active {
+    background-color:#E9242D;
+}
+
+/*Construction*/
+.construction-wrapper {
+    padding: 6rem 0;
+    text-align: center;
+    border: 5px solid #B01D23;
+}
+.construction {
+    font-size: 200%;
+    font-weight: 800;
+    color: #B01D23;
+    padding: 0 3rem;
+}
+.construction-wrapper .fa-tools {
+    font-size: 300%;
+    color: #B01D23;
+}
