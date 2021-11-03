@@ -68,6 +68,30 @@
     .contact-form {
         width: 80%;
     }
+    
+    .logo-red {
+    display: none;
+    height: 50px; /*was 50px, set to 55px*/
+    width: auto;
+    float: left;
+    margin: 5px 0; /*was 5px, set to 15px later*/
+    }
+    
+    .main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    }
+
+    .main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    } 
+    
+    .list-indent {
+    padding: 0 0 0 30px;
+    }
+    
 }
 
 /* FROM SMALL PHONES TO SMALL TABLETS: 481px - 767px */
@@ -96,9 +120,6 @@
     
     .mobile-nav-icon {
         display: inline-block;
-        position: absolute;
-        top: 0;
-        right: 16%;
     }
     
     .main-nav {
@@ -190,13 +211,8 @@
     .col-title-long {
         height: 40px;
     }
-    .column-div:nth-child(2)  h3{ /*Adjusts the height of a particular heading of intrest*/
+    /*Adjusts the height of a particular heading of intrest*/
+    .column-div:nth-child(2)  h3{
         height: 35px;
-    }
-    .mobile-nav-icon {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        right: 18%;
     }
 }

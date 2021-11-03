@@ -63,7 +63,7 @@ h3 {
 }
 
 h1 {
-    margin-top: 110px; /* was 0, set to 110px*/
+    margin-top: 0;
     margin-bottom: 30px;
     color: rgb(80, 80, 80);
     font-size: 270%;
@@ -77,7 +77,8 @@ h2 {
     margin-bottom: 30px;
 }
 
-.org-heading { /*Add a top margin to an inserted heading*/
+/*Add a top margin to an inserted heading*/
+.org-heading { 
     margin-top: 30px;
 }
 
@@ -287,26 +288,14 @@ input[type=submit]:active {
     background-size: cover;
     background-position: center;
     height: 90vh;
-    position: relative;
     background-attachment: fixed;
     border-bottom: 1px solid #B01D23;
-}
-
-/* Link that covers the main header */
-.main-header .main-header-page-link { /* link is 83% of header's height and is placed on the bottom of the main header*/
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-.main-header .main-header-page-link:hover {
-    background-color: rgba(0, 0, 0, .2);
 }
 
 .hero-text-box {
     position: absolute;
     width: 580px;
-    top: 50%;
+    top: 58%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -343,7 +332,6 @@ input[type=submit]:active {
 /* Main navi */
 
 nav {
-    display: hidden;
     background-color: #fff;
     border-bottom: 1px solid #B01D23;
 }
@@ -740,10 +728,10 @@ Swap Lang Button
 */
 
 .btn-swap-lang {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 1%;
-    display: block;
+    display: inline-block;
     padding: 10px 5px 2px !important;
     border: 1px solid gray !important;
     background-color: white;
