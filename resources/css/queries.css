@@ -158,7 +158,7 @@
     }
     
     .hero-text-box {
-    position: relative !important;
+    position: relative;
     padding-bottom: 300px;
     }
     
@@ -271,6 +271,11 @@
     /*Adjusts the height of a particular heading of intrest*/
     .column-div:nth-child(2)  h3{
         height: 35px;
+    }
+    
+    .hero-text-box {
+    position: relative;
+    padding-bottom: 300px;
     }
     
     .document-holder {
