@@ -158,7 +158,7 @@
     }
     
     .hero-text-box {
-    position: relative;
+    position: relative !important;
     padding-bottom: 300px;
     }
     
