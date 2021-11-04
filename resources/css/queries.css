@@ -8,6 +8,16 @@
     .row {
         padding: 0 2%;
     }
+    
+    .main-header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(img/hero-min.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 90vh;
+    background-attachment: inherit;
+    border-bottom: 1px solid #B01D23;
+    }
 }
 
 /* FROM SMALL TABLETS TO BIG TABLETS: 768px - 1023px */
@@ -69,6 +79,13 @@
         width: 80%;
     }
     
+    .logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
     .logo-red {
     display: none;
     height: 50px; /*was 50px, set to 55px*/

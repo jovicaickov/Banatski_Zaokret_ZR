@@ -295,7 +295,7 @@ input[type=submit]:active {
 .hero-text-box {
     position: absolute;
     width: 580px;
-    top: 58%;
+    top: 52%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

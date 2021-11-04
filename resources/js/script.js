@@ -98,7 +98,7 @@ $(document).ready(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon ion-icon');
         
-        nav.slideToggle(300);
+        nav.slideToggle(500);
         
         if (icon.attr('name') == ('menu-outline')) {
             icon.attr('name', 'close-outline');
@@ -106,7 +106,6 @@ $(document).ready(function() {
             icon.attr('name', 'menu-outline');
         }
     });
-   
 });
 
 
