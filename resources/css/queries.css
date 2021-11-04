@@ -109,6 +109,32 @@
     padding: 0 0 0 30px;
     }
     
+    .document-row {
+    width: 100%;
+    padding: 3rem 0;
+    display: block;
+    }
+    
+    .document-holder {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0rem;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+    border-top: #B01D23 5px solid;
+    color: #555;
+    }
+    
+    .document-holder .document-dl-link {
+    margin-top: 10px;
+    background-color: #B01D23;
+    color: white;
+    padding: .5rem 1rem;
+    transition:  .4s ease-in-out;
+    font-size: 90%;
+    }
+    
 }
 
 /* FROM SMALL PHONES TO SMALL TABLETS: 481px - 767px */
@@ -231,5 +257,26 @@
     /*Adjusts the height of a particular heading of intrest*/
     .column-div:nth-child(2)  h3{
         height: 35px;
+    }
+    
+    .document-holder {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0rem;
+    background-color: #f4f4f4;
+    justify-content: space-between;
+    border-top: #B01D23 5px solid;
+    color: #555;
+    }
+    
+    .document-holder .document-dl-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #B01D23;
+    color: white;
+    padding: .5rem 1rem;
+    transition:  .4s ease-in-out;
+    font-size: 90%;
     }
 }
