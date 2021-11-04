@@ -7,7 +7,7 @@ $(document).ready(function() {
             $('nav').removeClass('sticky')
         }
     }, {
-    offset: '60px'
+    offset: '5px'
    });
     
     /* scroll on buttons */
