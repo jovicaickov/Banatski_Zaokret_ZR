@@ -86,6 +86,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
     }
+    
     .logo-red {
     display: none;
     height: 50px; /*was 50px, set to 55px*/
@@ -133,6 +134,10 @@
     padding: .5rem 1rem;
     transition:  .4s ease-in-out;
     font-size: 90%;
+    }
+    
+    .mobile-nav-icon {
+    margin-right: 60px;
     }
     
 }
