@@ -139,7 +139,7 @@
     .mobile-nav-icon {
     margin-right: 60px;
     }
-    
+        
 }
 
 /* FROM SMALL PHONES TO SMALL TABLETS: 481px - 767px */
@@ -155,6 +155,15 @@
     .row,
     .hero-text-box {
         padding: 0 4%;
+    }
+    
+    .hero-text-box {
+    position: relative;
+    padding-bottom: 300px;
+    }
+    
+    .section-features {
+    padding-top: 50px;
     }
     
     .col {

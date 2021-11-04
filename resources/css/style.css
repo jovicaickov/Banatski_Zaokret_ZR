@@ -386,7 +386,7 @@ nav {
 /* Mobile navi */
 .mobile-nav-icon {
     float: right;
-    margin-top: 30px;
+    margin-top: 25px;
     cursor: pointer;
     display: none;
 }
