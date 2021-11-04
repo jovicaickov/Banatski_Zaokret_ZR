@@ -139,6 +139,14 @@
     .mobile-nav-icon {
     margin-right: 60px;
     }
+    
+    .btn-swap-lang {
+    
+    }
+    
+    .btn-swap-lang h6 {
+    display: none;
+    }
         
 }
 
